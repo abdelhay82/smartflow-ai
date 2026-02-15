@@ -15,7 +15,7 @@ L'originalité du projet réside dans l'utilisation du **Model Context Protocol 
 ```
 ┌───────────┐      ┌──────────┐      ┌──────────────────────────┐
 │ Telegram  │─────▶│ Gateway  │─────▶│       AI Service         │
-│ Bot       │◀─────│ (8080)   │◀─────│       (8083)             │
+│ Bot       │◀─────│ (8090)   │◀─────│       (8083)             │
 └───────────┘      └────┬─────┘      │                          │
                         │            │  Spring AI — MCP Client   │
 ┌───────────┐           │            │                          │
@@ -135,10 +135,3 @@ Ce projet est conçu comme un **support pédagogique** couvrant :
 - ✅ Frontend Angular avec authentification et streaming IA
 - ✅ Conteneurisation avec Docker Compose
 
-
-
----
-
-<p align="center">
-  Fait avec ❤️ et ☕ — 2025
-</p>
