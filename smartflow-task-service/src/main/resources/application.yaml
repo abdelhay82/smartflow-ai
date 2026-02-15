@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: smartflow-task-service
+
+  config:
+    import: optional:configserver:http://localhost:8888
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: htt://localhost8761/eureka/
+
