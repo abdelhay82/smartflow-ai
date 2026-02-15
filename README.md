@@ -58,7 +58,7 @@ L'originalité du projet réside dans l'utilisation du **Model Context Protocol 
 | **Discovery Server** | 8761 | Registre des services | Eureka Server |
 | **Config Server** | 8888 | Configuration centralisée | Spring Cloud Config + Git |
 | **Auth Service** | 8081 | Authentification + MCP Server | Spring Security, JWT, PostgreSQL |
-| **API Gateway** | 8080 | Point d'entrée unique + filtre JWT | Spring Cloud Gateway |
+| **API Gateway** | 8090 | Point d'entrée unique + filtre JWT | Spring Cloud Gateway |
 | **Task Service** | 8082 | Gestion des tâches + MCP Server | JPA, Kafka Producer, MCP Streamable HTTP |
 | **AI Service** | 8083 | Assistant IA + MCP Client | Spring AI, MCP Client |
 | **Notification Service** | 8084 | Notifications Telegram | Kafka Consumer, Telegram Bot API |
