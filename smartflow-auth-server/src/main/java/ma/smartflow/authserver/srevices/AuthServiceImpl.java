@@ -7,7 +7,6 @@ import ma.smartflow.authserver.dtos.RegisterRequest;
 import ma.smartflow.authserver.entities.User;
 import ma.smartflow.authserver.mappers.UserMapper;
 import ma.smartflow.authserver.repositories.UserRepository;
-import org.springaicommunity.mcp.annotation.McpTool;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -21,7 +20,6 @@ public class AuthServiceImpl implements AuthService{
     private final PasswordEncoder passwordEncoder;
 
     @Override
-    @McpTool(name = "register", description = "registr ")
     public AuthResponse register(RegisterRequest request) {
         if (userRepository.existByEmail(request.getEmail())) {
             throw new RuntimeException("Emaim already exists");
